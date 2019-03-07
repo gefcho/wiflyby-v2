@@ -1,0 +1,58 @@
+/*!====================================================
+ * HINT
+ * Copyright 2019, WyFly Team, http://wyfly.by/
+ * Author: Denis Dryk
+ * ====================================================
+ */
+.hint {
+	position: relative;
+	display: inline-block;
+	color: #3399ff;
+	cursor: pointer;
+}
+.hint:before, .hint:after {
+	position: absolute;
+	opacity: 0;
+	z-index: 1000000;
+	-webkit-transition: 0.3s ease;
+	-moz-transition: 0.3s ease;
+	transition: 0.3s ease;
+	pointer-events: none;
+}
+.hint:hover:before, .hint:hover:after {
+	opacity: 1;
+}
+.hint:before {
+	content: '';
+	position: absolute;
+	background: transparent;
+	border: 6px solid transparent;
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	margin: 0 0 -18px 0;
+	border-top-color: #3399ff;
+}
+.hint:after {
+	content: attr(data-hint);
+	background: #3399ff;
+	color: #ffffff;
+	padding: 8px 10px;
+	font-size: 13px;
+	white-space: nowrap;
+	border-radius: 15px;
+	box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+	bottom: 100%;
+	left: -15%;
+	margin: 0 0 -6px -10px;
+	width: 250px;
+	white-space: normal;
+	line-height: 1.4em;
+	word-wrap: break-word;
+}
+.hint:hover:before {
+	margin-bottom: -10px;
+}
+.hint:hover:after {
+	margin-bottom: 2px;	
+}

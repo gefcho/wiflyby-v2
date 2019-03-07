@@ -1,0 +1,323 @@
+/*!====================================================
+ * POPUP
+ * Copyright 2018, WyFly Team, http://wyfly.by/
+ * Author: Denis Dryk
+ * ====================================================
+ */
+/* The Modal (background) */
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 10; /* Sit on top */
+    padding-top: 6%; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #ffffff; /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Modal Content */
+.popup-content {
+  position: relative;
+	background-color: #ffffff;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 620px;
+  height: auto;
+  border-radius: 15px;
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+/* The Close Button */
+.close {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+  content: url(../img/icon-popup-close.svg);
+}
+.close:hover,
+.close:focus {
+  cursor: pointer;
+  content: url(../img/icon-popup-close-hover.svg);
+}
+.popup-header {
+	margin: 37px auto;
+	font-family: FuturaPTDemi;
+  font-size: 30px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.83;
+  letter-spacing: normal;
+  text-align: center;
+  color: #333333;
+}
+.popup-body {
+	padding: 0 30px;
+}
+.popup-tarif {
+  display: block;
+	padding: 0 30px;
+	margin: 40px 0;
+}
+.popup-footer {
+  padding: 0 30px;
+	margin: 0 0 40px 0;
+}
+input[type=text1] {
+  width: 270px;
+	height: 40px;
+  padding: 7px 15px;
+  display: inline-block;
+	border-radius: 30px;
+	border: solid 1px #d5d5d5;
+  box-sizing: border-box;
+	font-family: FuturaPT;
+	font-size: 18px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: left;
+	color: #333333;
+}
+input[type=tel] {
+	margin: 0 0 0 16px;
+  width: 270px;
+	height: 40px;
+  padding: 7px 15px;
+  display: inline-block;
+	border-radius: 30px;
+	border: solid 1px #d5d5d5;
+  box-sizing: border-box;
+	font-family: FuturaPT;
+	font-size: 18px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: left;
+	color: #333333;
+}
+#submit1 {
+  width: 100%;
+	height: 40px;
+  background-color: #3399ff;
+	font-family: FuturaPTDemi;
+	font-size: 18px;
+	text-align: center;
+	color: #ffffff;
+  margin: 0;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+#submit1:hover {
+	opacity: 0.7;
+}
+p#poptext-style-1 {
+	font-family: FuturaPT;
+	font-size: 12px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: 2px;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 23px 0 0 0;
+}
+p#poptext-style-2 {
+  font-family: FuturaPTDemi;
+  font-size: 30px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+	margin: 17px 0 14px 0;
+}
+p#poptext-style-3 {
+  font-family: FuturaPT;
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+	margin: 0 0 26px 0;
+}
+section {
+  display: flex;
+  flex-flow: row wrap;
+}
+section > div {
+  flex: 1;
+  padding: 0.5rem;
+}
+input[type="radio"] {
+  display: none;
+}
+input[type="radio"]:not(:disabled) ~ label {
+  cursor: pointer;
+}
+input[type="radio"]:disabled ~ label {
+  color: #bcc2bf;
+  border-color: #bcc2bf;
+  box-shadow: none;
+}
+label.popup-tarif1 {
+  display: block;
+  background: white;
+	border: solid 1px #d5d5d5;
+  border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-right-width: 0px;
+  text-align: center;
+	padding: 0 30px;
+}
+label.popup-tarif1:hover {
+  background: #E6E6E6;
+}
+label.popup-tarif2 {
+  display: block;
+  background: white;
+	border: solid 1px #d5d5d5;
+  text-align: center;
+	padding: 0 30px;
+}
+label.popup-tarif2:hover {
+  background: #E6E6E6;
+}
+label.popup-tarif3 {
+  display: block;
+  background: white;
+	border: solid 1px #d5d5d5;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	border-left-width: 0px;
+  text-align: center;
+	padding: 0 30px;
+}
+label.popup-tarif3:hover {
+  background: #E6E6E6;
+}
+input[type="radio"]:checked + label.popup-tarif1 {
+  background: #929292;
+  color: white;
+}
+input[type="radio"]:checked + label.popup-tarif2 {
+  background: #929292;
+  color: white;
+}
+input[type="radio"]:checked + label.popup-tarif3 {
+  background: #929292;
+  color: white;
+}
+select#control_list {
+  display: none;
+}
+@media (max-width: 768px) {
+  .popup {
+      padding-top: 0;
+  }
+  .popup-content {
+    width: 320px;
+    height: 568px;
+    border-radius: 0;
+  }
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  .close {
+  	position: absolute;
+  	top: 20px;
+  	right: 20px;
+    content: url(../img/icon-popup-close.svg);
+  }
+  .close:hover,
+  .close:focus {
+    cursor: pointer;
+    content: url(../img/icon-popup-close-hover.svg);
+  }
+  .popup-header {
+  	margin: 38px auto;
+    line-height: 1.17;
+    color: #262626;
+  }
+  .popup-body {
+  	padding: 0 20px;
+  }
+  .popup-tarif {
+    display: none;
+  	padding: 0 20px;
+  }
+  .popup-footer {
+    padding: 0 20px;
+  }
+  input[type=text1] {
+    width: 280px;
+    display: block;
+  }
+  input[type=tel] {
+  	margin: 30px 0 0 0;
+    width: 280px;
+    display: block;
+  }
+  select#control_list {
+    display: list-item;
+    margin: 30px 0 30px 0;
+    width: 280px;
+    height: 40px;
+    padding: 7px 15px;
+    border-radius: 30px;
+    border: solid 1px #d5d5d5;
+    box-sizing: border-box;
+    font-family: FuturaPT;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #333333;
+    background-color: inherit;
+    opacity: inherit;
+    background: url(../img/icon-mobile-dropdown.svg) no-repeat right;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-position-x: 244px;
+  }
+  select:active, select:focus {
+    outline: none;
+  }
+  select::-moz-focus-inner {
+    border: 0;
+  }
+}

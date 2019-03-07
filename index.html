@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Wi-Fly.by</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="common/img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="common/img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="common/img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="common/img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="common/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!--CSS-->
+    <link href="assets/plugins/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" type="text/css" media="screen" href="common/css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="common/css/hint.css">
+    <!--JS-->
+    <script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
+	<script src="assets/plugins/jquery/jquery-ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="assets/plugins/jquery/jquery.maskedinput/jquery.maskedinput.min.js"></script>
+    <script src="common/js/wf.maskedinput.js"></script>
+    <script src="common/js/slider.js"></script>
+    <script src="common/js/googlemap.js"></script>
+    <!--GOOGLEMAP-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDW_DRzOmjUO-GJ0wzEhPsr1WCpYH4ugM4&libraries=places&callback=wfMap" async defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Wi-Fly.by – Умная и полезная точка доступа</h1>
+            <img src="common/img/icon-logo-by.png" alt="logo">
+        </div>
+        <div class="slider">
+            <div class="slider-nav"></div>
+            <ul class="items">
+                <li class="item">
+                    <div class="slider-text">
+                        <h3>Умная и полезная точка доступа</h3>
+                        <p>Предоставляет Вам эффективные маркетинговые инструменты</p>
+                        <a>Подключиться</a>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="slider-text">
+                        <h3>Умная и полезная точка доступа</h3>
+                        <p>Обеспечивает стабильный доступ пользователей в сеть</p>
+                        <a>Подключиться</a>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="slider-text">
+                        <h3>Умная и полезная точка доступа</h3>
+                        <p>Предоставляет Вам эффективные маркетинговые инструменты</p>
+                        <a>Подключиться</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section id="why-needs">
+            <div class="section-title">
+                <span>1.</span>
+                <h2>Зачем нужна авторизация в Wi-Fi?</h2>
+            </div>
+            <div class="section-content">
+                <div class="desc">
+                    <div class="task">
+                        <h3>Проблема</h3>
+                        <p>Указом Президента Республики Беларусь № 60 от 01.06.10 г. владельцы общедоступных точек Wi-Fi обязаны обеспечивать авторизацию всех пользователей.</p>
+                        <p>За нарушение предусмотрена административная ответственность в виде штрафа до 367,50 Br за каждый обнаруженный факт.</p>
+                    </div>
+                    <div class="answer">
+                        <h3>Решение</h3>
+                        <p>Авторизация пользователей требует аутентифицировать пользователей,хранить и предоставлять данные по запросу компетентных органов.</p>
+                        <p>Мы подготовили полностью упакованное решение. Все законодательные требования соблюдаются автоматически.</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <ul class="list-buttons">
+                        <li><a href="files/doc/ykaz_prezidenta_rb_60_01.06.10.pdf" target="_blank">Указ Президента Республики Беларусь № 60 от 01.06.10 г.</a></li>
+                        <li><a href="files/doc/chapter2_22.16.pdf" target="_blank">Статья 22.16 часть 2 КоАП Республики Беларусь</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="how-works">
+            <div class="section-title">
+                <span>2.</span>
+                <h2>Как работает Wi-Fly?</h2>
+            </div>
+            <div class="section-content">
+                <div class="desc">
+                    <div class="task">
+                        <h3>Проблема</h3>
+                        <p>Wi-Fi с паролем — это анахронизм, это неудобно, это отвлекает сотрудников. В конце концов, без сохранения паспортных данных это незаконно.</p>
+                    </div>
+                    <div class="answer">
+                        <h3>Решение</h3>
+                        <p>Удобное решение для подключения пользователей —<br>это <a class="hint" data-hint="Captive portal – это сетевой сервис, требующий от подключившегося к Сети пользователя выполнить некоторые действия для получения доступа в Интернет. По сути представляет собой обычную Web-страницу, которая является единственным ресурсом, доступным пользователю до авторизации в сети.">captive portal <img src="common/img/icon-2-hint.svg"></a>, специальная страница, на которую переадресовывается любой пользователь точки Wi-Fi.</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <h4>Сценарий</h4>
+                    <p>Гаджет подключается к открытой сети Wi-Fi (без пароля)<br>и автоматически открывает страницу авторизации</p>
+                    <img src="common/img/icon-2-arrow.svg" alt="icon-2-arrow">
+                    <p>Пользователь просматривает брендированную страницу и проходит процедуру авторизации с помощью СМС</p>
+                    <img src="common/img/icon-2-arrow.svg" alt="icon-2-arrow">
+                    <p>Wi-Fly открывает пользователю доступ в интернет<br>на заданный период времени</p>
+                </div>
+            </div>
+        </section>
+        <section id="what-helps">
+            <div class="section-title">
+                <span>3.</span>
+                <h2>Чем полезен Wi-Fly?</h2>
+            </div>
+            <div class="section-content">
+                <div class="desc">
+                    <div class="task">
+                        <h3>Проблема</h3>
+                        <p>Системы портретирования клиентов практически недоступны для малого бизнеса. Программы лояльности, CRM и другие решения дорого стоят, долго устанавливаются и сложно настраиваются.</p>
+                        <p>Если система уже работает, Wi-Fly может интегрироваться и предоставлять дополнительные полезные данные о посетителях.</p>
+                    </div>
+                    <div class="answer">
+                        <h3>Решение</h3>
+                        <p>Wi-Fly — это решение, которое работает «из коробки» и при этом собирает:</p>
+                        <ul>
+                            <li>данные о гаджете (платежеспособность)</li>
+                            <li>данные о перемещении (частота посещения)</li>
+                            <li>префикс телефонного номера (регион происхождения)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="service">
+                        <div class="service-img">
+                            <img src="common/img/icon-3-statistic.svg" alt="statistic">
+                        </div>
+                        <p>Wi-Fly автоматически собирает и анализирует данные</p>
+                    </div>
+                    <div class="service">
+                        <div class="service-img">
+                            <img src="common/img/icon-3-users.svg" alt="users">
+                        </div>
+                        <p>Облачное ядро системы формирует «портрет» каждого пользователя</p>
+                    </div>
+                    <div class="service">
+                        <div class="service-img">
+                            <img src="common/img/icon-3-targer.svg" alt="targer">
+                        </div>
+                        <p>Вы выбираете «что» и «кому» показывать, а Wi-Fly таргетирует контент</p>
+                    </div>
+                    <div class="service">
+                        <div class="service-img">
+                            <img src="common/img/icon-3-analitic.svg" alt="analitic">
+                        </div>
+                        <p>Wi-Fly предоставляет подробные интерактивные отчеты</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="benefits">
+            <div class="section-title">
+                <span>4.</span>
+                <h2>Преимущества условий Wi-Fly</h2>
+            </div>
+            <div class="section-content">
+                <div class="desc">
+                    <div class="task">
+                        <h3>Проблема</h3>
+                        <p>Большинство cервисов на рынке имеют «составную» цену, которая зависит от количества пользователей, размера помещения и других факторов.</p>
+                        <p>Основные качества сервиса авторизации – это стабильность, отказоустойчивость, надежность хранения и выдачи данных по первому требованию.</p>
+                    </div>
+                    <div class="answer">
+                        <h3>Решение</h3>
+                        <p>Стоимость Wi-Fly фиксирована, и не зависит от внешних факторов. В самом сложном случае мы сами предложим оптимальное решение в виде индивидуального тарифа.</p>
+                        <p>Wi-Fly — это продукт, созданный командой профессионалов и развивающийся с 2014 года. Сеть Wi-Fly насчитывает более 500 точек Hotspot 2.0 и является крупнейшей уличной сетью в Европе.</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="service">
+                        <div class="service-img">
+                            <img src="common/img/icon-4-check.svg" alt="check">
+                        </div>
+                        <p>35,00 Br в месяц за все,<br>включая точку доступа</p>
+                    </div>
+                    <div class="service">
+                        <div class="service-img">
+                            <img src="common/img/icon-4-plug.svg" alt="plug">
+                        </div>
+                        <p>Точка доступане требует<br>IT-специалиста для установки</p>
+                    </div>
+                    <div class="service">
+                        <div class="service-img">
+                            <img src="common/img/icon-4-dialog.svg" alt="dialog">
+                        </div>
+                        <p>Удаленное обслуживание<br>и настройка 24 часа в сутки</p>
+                    </div>
+                    <div class="service">
+                        <div class="service-img">
+                            <img src="common/img/icon-4-update.svg" alt="update">
+                        </div>
+                        <p>Сервис совершенствуется<br>и все обновления бесплатны</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="tariffs">
+            <div class="section-title">
+                <h2>Тарифы</h2>
+            </div>
+            <div class="section-content">
+                <div class="card-content">
+                    <div class="card">
+                        <p class="time">1 месяц</p>
+                        <h4 class="total-price">35,00 Br</h4>
+                        <p class="month-price">&nbsp;</p>
+                        <p class="choose"><i class="fa fa-check"></i> Выбрать</p>
+                    </div>
+                    <div class="card">
+                        <p class="time">3 месяца</p>
+                        <h4 class="total-price">189,00 Br</h4>
+                        <p class="month-price">31,50 Br в месяц</p>
+                        <p class="choose"><i class="fa fa-check"></i> Выбрать</p>
+                    </div>
+                    <div class="card">
+                        <p class="time">12 месяцев</p>
+                        <h4 class="total-price">336,00 Br</h4>
+                        <p class="month-price">28,00 Br в месяц</p>
+                        <p class="choose"><i class="fa fa-check"></i> Выбрать</p>
+                    </div>
+                </div>
+                <div class="info transparent">
+                    <ul class="list-buttons">
+                        <li><a href="files/doc/dogovor.pdf" target="_blank">Договор об оказании услуг</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="map">
+            <div class="section-title">
+                <h2>Карта размещения точек</h2>
+            </div>
+            <div id="googlemap"></div>
+        </section>
+        <footer id="contact">
+            <div class="section-title">
+                <h2>Контактная информация</h2>
+            </div>
+            <div class="section-content">
+                <div class="contact-info">
+                    <ul class="tel">
+                        <li><a href="tel:+375 29 614-44-89">+375 29 614-44-89</a></li>
+                        <li><a href="tel:+375 29 292-45-28">+375 29 292-45-28</a></li>
+                    </ul>
+                    <ul class="mail">
+                        <li><a href="mailto:info@wi-fly.by">info@wi-fly.by</a></li>
+                    </ul>
+                    <ul class="adress">
+                        <li>г. Минск, 1-й Измайловский переулок, 51к3, офис 10</li>
+                    </ul>
+                </div>
+                <form action="common/php/mail.php" method="POST">
+                    <textarea name="message" placeholder="Сообщение" required></textarea>
+                    <input type="text" name="name" placeholder="Имя" maxlength="50" required>
+                    <input type="email" name="mail" id="mail" placeholder="E-mail" maxlength="40" required>
+                    <input type="submit" value="Отправить">
+                </form>
+                <div class="copyright"></div>
+            </div>
+        </footer>
+    </main>
+    <script>
+        function wfMap() {
+            map = new google.maps.Map(document.getElementById('googlemap'), {
+                center: new google.maps.LatLng(53.91419734, 27.54742384),
+                zoom: 14,
+                gestureHandling: 'cooperative',
+                mapTypeId: 'roadmap',
+                styles: [{
+                    "featureType": "administrative",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "visibility": "off"
+                    }]
+                },
+                {
+                    "featureType": "administrative.land_parcel",
+                    "stylers": [{
+                        "visibility": "off"
+                    }]
+                },
+                {
+                "featureType": "administrative.neighborhood",
+                "stylers": [{
+                "visibility": "off"
+                }]
+                },
+                {
+                "featureType": "poi",
+                "stylers": [{
+                "visibility": "off"
+                }]
+                },
+                {
+                "featureType": "poi",
+                "elementType": "labels.text",
+                "stylers": [{
+                "visibility": "off"
+                }]
+                },
+                {
+                "featureType": "road",
+                "elementType": "labels",
+                "stylers": [{
+                "visibility": "off"
+                }]
+                },
+                {
+                "featureType": "road",
+                "elementType": "labels.icon",
+                "stylers": [{
+                "visibility": "off"
+                }]
+                },
+                {
+                "featureType": "transit",
+                "stylers": [{
+                "visibility": "off"
+                }]
+                },
+                {
+                "featureType": "water",
+                "elementType": "labels.text",
+                "stylers": [{
+                "visibility": "off"
+                }]
+                }]
+            });
+            setMarker1(map);
+            setMarker2(map);
+            setMarker3(map);
+        }
+        var icon = {
+            url: 'common/img/icon-mapplace.png'
+        };
+        var iconHover = {
+            url: 'common/img/icon-mapplace-hover.png'
+        };
+        var iconActive = {
+            url: 'common/img/icon-mapplace-active.png'
+        };
+        function setMarker1(map) {
+            var contentString = '<div class="map-content">'+
+                                '<div class="map-title">Музей</div>'+
+                                '<div class="map-name">Музей гісторыі Вялікай Айчыннай вайны</div>'+
+                                '<div class="map-place">просп. Победителей 8</div>'+
+                                '</div>';
+            var infowindow = new google.maps.InfoWindow({
+                content: contentString,
+                maxWidth: 210
+            });
+            var marker = new google.maps.Marker({
+                position: {lat: 53.915894, lng: 27.538103},
+                map: map,
+                icon: icon,
+                title: 'Музей гісторыі Вялікай Айчыннай вайны'
+            });
+            google.maps.event.addListener(marker, 'mouseover', function() {
+                marker.setIcon(iconHover);
+            });
+            google.maps.event.addListener(marker, 'mouseout', function() {
+                marker.setIcon(icon);
+            });
+            google.maps.event.addListener(marker, 'click', function() {
+                infowindow.open(map, marker);
+                marker.setIcon(iconActive);
+            });
+            google.maps.event.addListener(map, 'click', function() {
+                infowindow.close();
+                marker.setIcon(icon);
+            });
+            google.maps.event.addListener(infowindow, 'domready', function() {
+                var iwOuter = $('.gm-style-iw');
+                var iwBackground = iwOuter.prev();
+                iwBackground.children(':nth-child(2)').css({'display' : 'none'});
+                iwBackground.children(':nth-child(4)').css({'display' : 'none'});
+                iwBackground.children(':nth-child(3)').find('div').children().css({'box-shadow': 'none', 'z-index' : '100'});
+                var iwCloseBtn = iwOuter.next();
+                iwCloseBtn.css({display: 'none'});
+            });
+        }
+        
+        function setMarker2(map) {
+            var contentString = '<div class="map-content">'+
+                                '<div class="map-title">Спортивный комплекс</div>'+
+                                '<div class="map-name">Дворец спорта</div>'+
+                                '<div class="map-place">просп. Победителей 4</div>'+
+                                '</div>';
+            var infowindow = new google.maps.InfoWindow({
+                content: contentString,
+                maxWidth: 210
+            });
+            var marker = new google.maps.Marker({
+                position: {lat: 53.9106507, lng: 27.5494524},
+                map: map,
+                icon: icon,
+                title: 'Дворец спорта'
+            });
+            google.maps.event.addListener(marker, 'mouseover', function() {
+                marker.setIcon(iconHover);
+            });
+            google.maps.event.addListener(marker, 'mouseout', function() {
+                marker.setIcon(icon);
+            });
+            google.maps.event.addListener(marker, 'click', function() {
+                infowindow.open(map, marker);
+                marker.setIcon(iconActive);
+            });
+            google.maps.event.addListener(map, 'click', function() {
+                infowindow.close();
+                marker.setIcon(icon);
+            });
+            google.maps.event.addListener(infowindow, 'domready', function() {
+                var iwOuter = $('.gm-style-iw');
+                var iwBackground = iwOuter.prev();
+                iwBackground.children(':nth-child(2)').css({'display' : 'none'});
+                iwBackground.children(':nth-child(4)').css({'display' : 'none'});
+                iwBackground.children(':nth-child(3)').find('div').children().css({'box-shadow': 'none', 'z-index' : '100'});
+                var iwCloseBtn = iwOuter.next();
+                iwCloseBtn.css({display: 'none'});
+            });
+        }
+
+        function setMarker3(map) {
+            var contentString = '<div class="map-content">'+
+                                '<div class="map-title">Казино</div>'+
+                                '<div class="map-name">Покерный клуб "Федерация"</div>'+
+                                '<div class="map-place">ул. Сторожёвская 15а</div>'+
+                                '</div>';
+            var infowindow = new google.maps.InfoWindow({
+                content: contentString,
+                maxWidth: 210
+            });
+            var marker = new google.maps.Marker({
+                position: {lat: 53.9153917, lng: 27.5494087},
+                map: map,
+                icon: icon,
+                title: 'Покерный клуб "Федерация"'
+            });
+            google.maps.event.addListener(marker, 'mouseover', function() {
+                marker.setIcon(iconHover);
+            });
+            google.maps.event.addListener(marker, 'mouseout', function() {
+                marker.setIcon(icon);
+            });
+            google.maps.event.addListener(marker, 'click', function() {
+                infowindow.open(map, marker);
+                marker.setIcon(iconActive);
+            });
+            google.maps.event.addListener(map, 'click', function() {
+                infowindow.close();
+                marker.setIcon(icon);
+            });
+            google.maps.event.addListener(infowindow, 'domready', function() {
+                var iwOuter = $('.gm-style-iw');
+                var iwBackground = iwOuter.prev();
+                iwBackground.children(':nth-child(2)').css({'display' : 'none'});
+                iwBackground.children(':nth-child(4)').css({'display' : 'none'});
+                iwBackground.children(':nth-child(3)').find('div').children().css({'box-shadow': 'none', 'z-index' : '100'});
+                var iwCloseBtn = iwOuter.next();
+                iwCloseBtn.css({display: 'none'});
+            });
+        }
+    </script>
+</body>
+</html>
