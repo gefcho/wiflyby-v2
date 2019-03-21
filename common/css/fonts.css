@@ -1,0 +1,18 @@
+/* ====================================================
+ * Fonts Stylesheets
+ * Copyright 2019, WyFly Team, http://wyfly.by/
+ * Author: Denis Dryk
+ * ====================================================
+ */
+ @font-face {
+	font-family: 'FuturaPT Demi';
+	src: url('../../assets/fonts/FuturaPTDemi.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'FuturaPT Medium';
+	src: url('../../assets/fonts/FuturaPTMedium.otf');
+	font-weight: normal;
+	font-style: normal;
+}
