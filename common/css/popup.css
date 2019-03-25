@@ -1,0 +1,161 @@
+/* ====================================================
+ * Popup Stylesheets
+ * Copyright 2019, WyFly Team, http://wifly.by/
+ * Author: Denis Dryk
+ * ====================================================
+ */
+
+ .popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    z-index: 999;
+    transition: .5s;
+}
+.popup .popup-container {
+    position: relative;
+    top: 0;
+    width: 620px;
+    margin: auto;
+    background-color: #fff;
+    border: 1px solid #888;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+    transform: translateY(-100%);
+    transition: .5s;
+}
+.popup.show {
+    background-color: rgba(0, 0, 0, 0.4);
+    display: block;
+}
+.popup.show .popup-container {
+    top: 50%;
+    transform: translateY(-50%);
+}
+.popup .popup-container .popup-title {
+    position: relative;
+    padding-top: 30px;
+    text-align: center;
+}
+.popup .popup-container .popup-title h3 {
+    font-size: 30px;
+}
+.popup .popup-container .popup-title span.popup-close {
+    content: url('../img/icon-popup-close.svg');
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+}
+.popup .popup-container .popup-title span.popup-close:hover,
+.popup .popup-container .popup-title span.popup-close:focus {
+    content: url('../img/icon-popup-close-hover.svg');
+    cursor: pointer;
+}
+.popup .popup-container .popup-content {
+    padding: 40px 30px;
+}
+.popup .popup-container form.popup-content input[type=text],
+.popup .popup-container form.popup-content input[type=tel],
+.popup .popup-container form.popup-content select.list-tariffs {
+    color: #262626;
+    border: 1px solid #d5d5d5;
+}
+.popup .popup-container form.popup-content input[type=text],
+.popup .popup-container form.popup-content input[type=tel] {
+    width: 270px;
+    margin-bottom: 40px;
+}
+.popup .popup-container form.popup-content select.list-tariffs {
+    display: none;
+}
+.popup .popup-container form.popup-content .popup-tariff {
+    display: flex;
+    width: 100%;
+    margin-bottom: 40px;
+    justify-content: center;
+    text-align: center;
+}
+.popup .popup-container form.popup-content .popup-tariff input[type="radio"] {
+    display: none;
+}
+.popup .popup-container form.popup-content .popup-tariff input[type="radio"]:checked + label {
+    background: #929292;
+}
+.popup .popup-container form.popup-content .popup-tariff input[type="radio"]:checked + label p.time,
+.popup .popup-container form.popup-content .popup-tariff input[type="radio"]:checked + label h4.total-price,
+.popup .popup-container form.popup-content .popup-tariff input[type="radio"]:checked + label p.month-price {
+    color: #fff;
+}
+.popup .popup-container form.popup-content .popup-tariff label {
+    width: 100%;
+    padding: 25px 0;
+    border: 1px solid #d5d5d5;
+    cursor: pointer;
+    transition: .3s;
+}
+.popup .popup-container form.popup-content .popup-tariff label:hover {
+    background-color: #e6e6e6;
+}
+.popup .popup-container form.popup-content .popup-tariff label[for=first-tariff] {
+    border-right: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.popup .popup-container form.popup-content .popup-tariff label:last-child {
+    border-left: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.popup .popup-container form.popup-content .popup-tariff label p.time {
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.popup .popup-container form.popup-content .popup-tariff label h4.total-price {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.popup .popup-container form.popup-content .popup-tariff label p.month-price {
+    font-size: 12px;
+}
+.popup .popup-container form.popup-content input[type=submit] {
+    margin-bottom: 0;
+    background-color: #3399ff;
+}
+@media (max-width: 767px) {
+    .popup .popup-container {
+        width: 100%;
+        height: 100%;
+        border: 0;
+        border-radius: 0;
+    }
+    .popup.show .popup-container {
+        top: 0;
+        transform: none;
+    }
+    .popup .popup-container .popup-content{
+        padding: 40px 20px;
+    }
+    .popup .popup-container form.popup-content input[type=text],
+    .popup .popup-container form.popup-content input[type=tel],
+    .popup .popup-container form.popup-content select.list-tariffs {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .popup .popup-container form.popup-content select.list-tariffs {
+        display: inline-block;
+        background: url('../img/icon-mobile-dropdown.svg') no-repeat right;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-position-x: 244px;
+    }
+    .popup .popup-container form.popup-content .popup-tariff {
+        display: none;
+    }
+}

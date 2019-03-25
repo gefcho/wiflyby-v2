@@ -21,6 +21,7 @@
     <script src="assets/plugins/jquery/jquery.maskedinput/jquery.maskedinput.min.js"></script>
     <script src="common/js/wf.maskedinput.js"></script>
     <script src="common/js/wf.slider.js"></script>
+    <script src="common/js/wf.popup.js"></script>
     <script src="common/js/wf.googlemap.js" async defer></script>
 </head>
 <body>
@@ -36,21 +37,21 @@
                     <div class="slider-text">
                         <h3>Умная и полезная точка доступа</h3>
                         <p>Предоставляет Вам эффективные маркетинговые инструменты</p>
-                        <a>Подключиться</a>
+                        <a id="popup">Подключиться</a>
                     </div>
                 </li>
                 <li class="item">
                     <div class="slider-text">
                         <h3>Умная и полезная точка доступа</h3>
                         <p>Обеспечивает стабильный доступ пользователей в сеть</p>
-                        <a>Подключиться</a>
+                        <a id="popup">Подключиться</a>
                     </div>
                 </li>
                 <li class="item">
                     <div class="slider-text">
                         <h3>Умная и полезная точка доступа</h3>
                         <p>Предоставляет Вам эффективные маркетинговые инструменты</p>
-                        <a>Подключиться</a>
+                        <a id="popup">Подключиться</a>
                     </div>
                 </li>
             </ul>
@@ -216,30 +217,68 @@
                 </div>
                 <div class="section-content">
                     <div class="card-content">
-                        <div class="card">
+                        <a id="popup" class="card">
                             <p class="time">1 месяц</p>
                             <h4 class="total-price">35,00 Br</h4>
                             <p class="month-price">&nbsp;</p>
                             <p class="choose"><i class="fa fa-check"></i> Выбрать</p>
-                        </div>
-                        <div class="card">
+                        </a>
+                        <a id="popup" class="card">
                             <p class="time">3 месяца</p>
                             <h4 class="total-price">189,00 Br</h4>
                             <p class="month-price">31,50 Br в месяц</p>
                             <p class="choose"><i class="fa fa-check"></i> Выбрать</p>
-                        </div>
-                        <div class="card">
+                        </a>
+                        <a id="popup" class="card">
                             <p class="time">12 месяцев</p>
                             <h4 class="total-price">336,00 Br</h4>
                             <p class="month-price">28,00 Br в месяц</p>
                             <p class="choose"><i class="fa fa-check"></i> Выбрать</p>
-                        </div>
+                        </a>
                     </div>
                     <div class="info transparent">
                         <ul class="list-buttons">
                             <li><a href="files/doc/dogovor.pdf" target="_blank">Договор об оказании услуг</a></li>
                         </ul>
                     </div>
+                </div>
+            </div>
+            <div class="popup">
+                <div class="popup-container">
+                    <div class="popup-title">
+                        <h3>Заявка на подключение</h3>
+                        <span class="popup-close"></span>
+                    </div>
+                    <form class="popup-content" action="">
+                        <input type="text" name="name" placeholder="Имя" maxlength="50" required>
+                        <input type="tel" name="tel" placeholder="Телефон" required>
+                        <select class="list-tariffs" name="tariff">
+                            <option value="1">1 месяц — 35,00 Br</option>
+                            <option value="2">3 месяца — 189,00 Br</option>
+                            <option value="3">12 месяцев — 336,00 Br</option>
+                        </select>
+                        <div class="popup-tariff">
+                            <input type="radio" id="first-tariff" name="tarif" value="1">
+                            <label for="first-tariff">
+                                <p class="time">1 месяц</p>
+                                <h4 class="total-price">35,00 Br</h4>
+                                <p class="month-price">&nbsp;</p>
+                            </label>
+                            <input type="radio" id="second-tariff" name="tarif" value="2">
+                            <label for="second-tariff">
+                                <p class="time">3 месяца</p>
+                                <h4 class="total-price">189,00 Br</h4>
+                                <p class="month-price">31,50 Br в месяц</p>
+                            </label>
+                            <input type="radio" id="third-tariff" name="tarif" value="3">
+                            <label for="third-tariff">
+                                <p class="time">12 месяцев</p>
+                                <h4 class="total-price">336,00 Br</h4>
+                                <p class="month-price">28,00 Br в месяц</p>
+                            </label>
+                        </div>
+                        <input type="submit" value="Отправить заявку">
+                    </form>
                 </div>
             </div>
         </section>

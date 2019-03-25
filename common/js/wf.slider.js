@@ -1,6 +1,6 @@
 /* ====================================================
  * Slider jQuery JS
- * Copyright 2019, WyFly Team, http://wyfly.by/
+ * Copyright 2019, WyFly Team, http://wifly.by/
  * Author: Denis Dryk
  * ====================================================
  */
@@ -46,6 +46,7 @@ jQuery(document).ready(function($){
                 clearTimeout(timeout);
             }).mouseleave(function(){
                 timeout=setTimeout(function(){
+                    clearTimeout(timeout);
                     next((index + 1) % $item.length);
                 }, time);
             });

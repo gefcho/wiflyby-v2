@@ -1,6 +1,6 @@
 /* ====================================================
  * GoogleMap JS
- * Copyright 2019, WyFly Team, http://wyfly.by/
+ * Copyright 2019, WyFly Team, http://wifly.by/
  * Author: Denis Dryk
  * ====================================================
  */
